@@ -8,12 +8,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.4" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="IRepositories\" />
-	  <Folder Include="Exceptions\" />
-	  <Folder Include="Constants\" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.9.0" />
 	</ItemGroup>
 
 </Project>

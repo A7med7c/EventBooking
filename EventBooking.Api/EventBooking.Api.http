@@ -1,6 +1,27 @@
-@EventBooking.Api_HostAddress = http://localhost:5202
+@EventBooking.Api_HostAddress = https://localhost:7034
 
 GET {{EventBooking.Api_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+POST {{EventBooking.Api_HostAddress}}/api/user/register
+Content-Type: application/json
+
+{
+  "firstName": "Ahmed",
+  "lastName": "Ali",
+  "email": "user@test.com",
+  "userName": "User",
+  "password": "StrongPassword"
+}
+###
+POST {{EventBooking.Api_HostAddress}}/api/user/login
+Content-Type: application/json
+
+{
+ "email": "user@test.com",
+  "password": "Test123!"
+}
 
 ###
